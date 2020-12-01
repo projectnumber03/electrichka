@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  webhook:
+    build: .
+    container_name: alice
+    command: npx nodemon src/index.js --watch src
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/alice
+
+  ngrok:
+    container_name: ngrok
+    image: wernight/ngrok
+    command: ngrok http webhook:3000 -authtoken=1l4EaVECTjmst5CWHTzXiFdhoSj_7qxtMpvUYfNV93iZayhvd
+    ports:
+      - 4040:4040
+
+volumes:
+  node_modules_volume:

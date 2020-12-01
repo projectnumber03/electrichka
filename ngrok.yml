@@ -1,0 +1,5 @@
+authtoken: 1l4EaVECTjmst5CWHTzXiFdhoSj_7qxtMpvUYfNV93iZayhvd
+tunnels:
+  webhook:
+    proto: http
+    addr: "webhook:3000"

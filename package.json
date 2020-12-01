@@ -1,0 +1,9 @@
+{
+  "name": "alice-workshop",
+  "version": "1.0.0",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.4",
+    "micro": "^9.3.4"
+  }
+}
